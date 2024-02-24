@@ -9,9 +9,6 @@ const Header = () => {
         if(value === "cart"){
             navigate("/cart");
         }
-        if(value === "setting"){
-            navigate("/setting");
-        }
         if(value === "home"){
             navigate("/");
         }
@@ -20,7 +17,7 @@ const Header = () => {
     return (<div className="header-container">
         <Dropdown
             defaultName="Profile"
-            options={["home","cart","setting", "logout"]}
+            options={["home","cart"]}
             onSelect={handleDropdown} />
     </div>)
 }

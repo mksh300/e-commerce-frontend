@@ -9,9 +9,11 @@
         width: 100%;
         position: absolute;
         width: 150px;
-        top: 7px;
+        margin: 0;
+        top: 22px;
         left: 0px;
         border-radius: 5px;
+        overflow: hidden;
         padding: 0;
     }
     li {

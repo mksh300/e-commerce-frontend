@@ -1,24 +1,15 @@
 import React, {useState} from "react"
 import SearchBar  from "../searchBar"
 import ProductCard from "../productCard"
+import productData from "./mockData"
+import TitleBar from "../titlebar"
 
 const Home = () => {
-    const [products, setProducts] = useState([
-        {id: 1, name: "test1", amount: 100}, 
-        {id: 2, name: "test2", amount: 200},
-         {id: 3, name: "test3", amount: 300},
-         {id: 1, name: "test1", amount: 100}, 
-         {id: 2, name: "test2", amount: 200},
-          {id: 3, name: "test3", amount: 300},
-          {id: 1, name: "test1", amount: 100}, 
-          {id: 2, name: "test2", amount: 200},
-           {id: 3, name: "test3", amount: 300},
-           {id: 1, name: "test1", amount: 100}, 
-           {id: 2, name: "test2", amount: 200},
-            {id: 3, name: "test3", amount: 300}])
+    const [products, setProducts] = useState(productData)
 return (
     <React.Fragment>
-    <SearchBar/>
+        <TitleBar title={"Home"}/>
+    <SearchBar products={productData} setProducts={setProducts}/>
     <div className="product-list-container">
     {products.map((item)=> <ProductCard data={item}/>)}
     </div>
