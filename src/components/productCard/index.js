@@ -15,6 +15,7 @@ const ProductCard = ({ data }) => {
         if (productList[index]) {
             productList[index].count += 1
         } else {
+            data.count = 1
             productList = [...productList, data]
         }
         localStorage.setItem("productList", JSON.stringify(productList))
