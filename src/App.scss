@@ -1,7 +1,16 @@
 @import '../assets/scss/header.scss';
+@import '../assets/scss/footer.scss';
+@import '../assets/scss/searchBar.scss';
+@import '../assets/scss/productCard.scss';
+@import '../assets/scss/dropdown.scss';
 
 .app {
     text-align: center;
     height: 100vh;
-    width: 100wh;
+    width: 100vw;
+    position: relative;
   }
+.app-content {
+    padding: 0px 20px;
+}
+@import '../assets/scss/productCard.scss';

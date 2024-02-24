@@ -1,4 +1,4 @@
-.header-container {
+.footer-container {
     width: 100%;
     background-color: blue;
     color: white;
@@ -7,10 +7,5 @@
     border: none;
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    .dropdown {
-        position: absolute;
-        right: 10px;
-    }
+    justify-content: center
 }
